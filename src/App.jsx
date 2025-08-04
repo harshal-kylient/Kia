@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // --- IMPORTANT: ADD YOUR OPENROUTER API KEY HERE ---
 // You can get a key from https://openrouter.ai/keys
-const OPENROUTER_API_KEY = "YOUR_OPENROUTER_API_KEY";
+const OPENROUTER_API_KEY = "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";
 
 // Main App Component
 const App = () => {
