@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        # Use npm ci for clean, consistent installs in CI/CD environments
+        - npm ci
+    build:
+      commands:
+        # This command runs the 'build' script from your package.json
+        - npm run build
+  artifacts:
+    # The build output is located in the 'dist' directory
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      # Cache node_modules to speed up subsequent builds
+      - node_modules/**/*
